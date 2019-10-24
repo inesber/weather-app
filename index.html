@@ -1,10 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Weather App</title>
+    <link href="src/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round|Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/c58c9ccf2d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
-  <body></body>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <div class="row">
+          <div class="col-9">
+            <h1 id="city-name">Lisbon</h1>
+            <div class="row">
+              <div class="col-6">
+                <i class="fas fa-sun current-icon"></i>
+                <p class="weather-quote">The sun is shining.</p>
+              </div>
+
+              <div class="col-6">
+                <div class="current-temperature">22ºC</div>
+                <ul class="day-and-time">
+                  <li class="date">02 November 2019</li>
+                  <li class="hours">Sunday, 19:43</li>
+                </ul>
+                <div class="wind-and-precipitation">
+                  <ul>
+                    <li>Wind: 18 km/h</li>
+                    <li>Precipitation: 0%</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <form id="search-form">
+              <input
+                type="search"
+                placeholder="Type a city..."
+                autocomplete="off"
+                class="search-bar"
+                id="search-input"
+              />
+              <input
+                type="submit"
+                placeholder="search"
+                class="btn btn-outline-primary"
+              />
+            </form>
+          </div>
+          <div class="col-3">
+            <div class="row">
+              <div class="col-5">
+                <i class="fas fa-sun prediction-icon"></i>
+                <i class="fas fa-cloud-sun prediction-icon"></i>
+                <i class="fas fa-wind prediction-icon"></i>
+                <i class="fas fa-cloud-sun-rain prediction-icon"></i>
+                <i class="fas fa-sun prediction-icon"></i>
+              </div>
+              <div class="col-7 prediction-text">
+                <p>
+                  28ºC <br />
+                  MON
+                </p>
+                <p>
+                  27ºC <br />
+                  TUE
+                </p>
+                <p>
+                  23ºC <br />
+                  WED
+                </p>
+                <p>
+                  27ºC <br />
+                  THU
+                </p>
+                <p>
+                  24ºC <br />
+                  FRI
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
 </html>
