@@ -44,6 +44,7 @@ function search(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-input");
   let searchCity = document.querySelector("#city-name");
+
   //searchCity = searchCity.toUpperCase();
   searchCity.innerHTML = searchInput.value;
 
@@ -59,7 +60,9 @@ let apiKey = "0c7738f69f93f7a10985af2c2d89420a";
 
 function showTemperature(response) {
   let degrees = document.querySelector(".current-temperature");
+  let weatherDescription = document.querySelector(".weather-quote");
   degrees.innerHTML = `${Math.round(response.data.main.temp)}ºC`;
+  weatherDescription.innerHTML = response.data.weather[0].main;
 }
 
 //axios.get(url).then(showTemperature);
