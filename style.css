@@ -1,0 +1,80 @@
+h1 {
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  padding: 10px;
+  font-size: 50px;
+}
+
+.weather-app {
+  border: 1px solid #dadde1;
+  margin: 60px auto;
+  max-width: 700px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.current-icon {
+  display: block;
+  margin: 0 auto;
+  font-size: 170px;
+  padding: 20px;
+  color: #f1bc31;
+  text-align: center;
+}
+
+.weather-quote {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Satisfy", cursive;
+}
+
+.current-temperature {
+  text-align: center;
+  font-size: 80px;
+  font-family: "Varela Round", sans-serif;
+}
+
+li {
+  list-style: none;
+  font-family: "Varela Round", sans-serif;
+}
+
+.day-and-time li {
+  padding: 5px;
+  font-size: 20px;
+  line-height: 19px;
+  text-align: right;
+}
+
+.wind-and-precipitation {
+  border: 1px solid #dadde1;
+  padding: 10px 0 0;
+  margin: 20px 0 0 60px;
+}
+
+.wind-and-precipitation li {
+  font-size: 12px;
+  text-align: center;
+}
+
+.search-bar {
+  width: 75%;
+  border-radius: 5px;
+  margin: 30px 10px 0;
+}
+
+.prediction-icon {
+  padding: 24px;
+  font-size: 40px;
+  color: #c5c5c5;
+}
+
+.prediction-text {
+  font-family: "Varela Round", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+p {
+  padding: 7px;
+}
