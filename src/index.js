@@ -65,4 +65,15 @@ function showTemperature(response) {
   weatherDescription.innerHTML = response.data.weather[0].main;
 }
 
-//axios.get(url).then(showTemperature);
+function displayCurrentTemperature(response) {
+  let currentTemperature = document.querySelector("#currentTemperature");
+  let currentCity = document.querySelector(".current-city");
+  let weatherDescription = document.querySelector(".weather-quote");
+
+  currentTemperature.innerHTML = Math.round(response.data.main.temp);
+  currentCity.innerHTML = response.data.name;
+  weatherDescription.innerHTML = response.data.weather[0].main;
+}
+
+let url = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
+axios.get(url).then(displayCurrentTemperature);
