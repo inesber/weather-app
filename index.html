@@ -30,7 +30,7 @@
       <div class="weather-app">
         <div class="row">
           <div class="col-9">
-            <h1 id="city-name" class="current-city"></h1>
+            <h1 id="city-name" class="current-city">Lisbon</h1>
             <div class="row">
               <div class="col-6">
                 <i class="fas fa-sun current-icon"></i>
@@ -38,7 +38,9 @@
               </div>
 
               <div class="col-6">
-                <div class="current-temperature" id="currentTemperature"></div>
+                <div class="current-temperature" id="currentTemperature">
+                  22ºC
+                </div>
 
                 <ul class="day-and-time">
                   <li class="date">02 November 2019</li>
@@ -46,8 +48,14 @@
                 </ul>
                 <div class="wind-and-precipitation">
                   <ul>
-                    <li>Wind: 18 km/h</li>
-                    <li>Precipitation: 0%</li>
+                    <li>
+                      Wind:
+                      <span id="wind">18</span> km/h
+                    </li>
+                    <li>
+                      Humidity:
+                      <span id="humidity">0</span>%
+                    </li>
                   </ul>
                 </div>
               </div>
