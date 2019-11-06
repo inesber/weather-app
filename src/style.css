@@ -3,6 +3,7 @@ h1 {
   font-family: "Varela Round", sans-serif;
   padding: 10px;
   font-size: 50px;
+  text-transform: capitalize;
 }
 
 .weather-app {

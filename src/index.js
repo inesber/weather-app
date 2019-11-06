@@ -45,7 +45,6 @@ function search(event) {
   let searchInput = document.querySelector("#search-input");
   let searchCity = document.querySelector("#city-name");
 
-  //searchCity = searchCity.toUpperCase();
   searchCity.innerHTML = searchInput.value;
 
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput.value}&appid=${apiKey}&units=metric`;
