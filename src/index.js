@@ -74,10 +74,10 @@ function displayCurrentTemperature(response) {
   let currentCity = document.querySelector(".current-city");
   let weatherDescription = document.querySelector(".weather-quote");
 
-  currentTemperature.innerHTML = Math.round(response.data.main.temp);
+  currentTemperature.innerHTML = ` ${Math.round(response.data.main.temp)}ºC`;
   currentCity.innerHTML = response.data.name;
   weatherDescription.innerHTML = response.data.weather[0].main;
 }
 
-let url = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
+let url = `https://api.openweathermap.org/data/2.5/weather?q=Lisbon&appid=${apiKey}&units=metric`;
 axios.get(url).then(displayCurrentTemperature);
