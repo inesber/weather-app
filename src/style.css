@@ -44,18 +44,19 @@ li {
   padding: 5px;
   font-size: 20px;
   line-height: 19px;
-  text-align: right;
+  text-align: center;
 }
 
 .wind-and-precipitation {
-  border: 1px solid #dadde1;
-  padding: 10px 0 0;
-  margin: 20px 0 0 60px;
+  width: 60%;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .wind-and-precipitation li {
   font-size: 12px;
-  text-align: center;
 }
 
 .search-bar {
