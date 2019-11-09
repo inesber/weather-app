@@ -14,12 +14,12 @@ h1 {
   border-radius: 20px;
 }
 
-.current-icon {
+#weather-icon {
   display: block;
   margin: 0 auto;
-  font-size: 170px;
-  padding: 20px;
-  color: #f1bc31;
+  height: 170px;
+  width: 170px;
+  padding: 10px;
   text-align: center;
 }
 

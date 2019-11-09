@@ -62,21 +62,31 @@ function showTemperature(response) {
   let weatherDescription = document.querySelector(".weather-quote");
   let currentWind = document.querySelector("#wind");
   let currentHumidity = document.querySelector("#humidity");
+  let icon = document.querySelector("#weather-icon");
 
   degrees.innerHTML = `${Math.round(response.data.main.temp)}ºC`;
   weatherDescription.innerHTML = response.data.weather[0].main;
   currentWind.innerHTML = response.data.wind.speed;
   currentHumidity.innerHTML = response.data.main.humidity;
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function displayCurrentTemperature(response) {
   let currentTemperature = document.querySelector("#currentTemperature");
   let currentCity = document.querySelector(".current-city");
   let weatherDescription = document.querySelector(".weather-quote");
+  let icon = document.querySelector("#weather-icon");
 
   currentTemperature.innerHTML = ` ${Math.round(response.data.main.temp)}ºC`;
   currentCity.innerHTML = response.data.name;
   weatherDescription.innerHTML = response.data.weather[0].main;
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 let url = `https://api.openweathermap.org/data/2.5/weather?q=Lisbon&appid=${apiKey}&units=metric`;
